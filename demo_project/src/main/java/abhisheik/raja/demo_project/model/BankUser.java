@@ -1,0 +1,82 @@
+package abhisheik.raja.demo_project.model;
+
+public class BankUser {
+    private Long id;
+    private String name;
+    private String email;
+    private String accountNumber;
+    private Double balance;
+    private String accountType;
+
+    public BankUser() {
+    }
+
+    public BankUser(Long id, String name, String email, String accountNumber, Double balance, String accountType) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.accountType = accountType;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+
+    @Override
+    public String toString() {
+        return "BankUser{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                ", accountType='" + accountType + '\'' +
+                '}';
+    }
+}
