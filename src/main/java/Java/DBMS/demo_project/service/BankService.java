@@ -1,4 +1,16 @@
-package Java.DBMS.demo_project.service;
+package Bankmanagement.app.service;
+import org.springframework.stereotype.Service;
+import Bankmanagement.app.model.User;
+import java.util.List;
+import java.util.ArrayList;
 
-public class service {
+@Service
+public class BankService {
+
+    private List<User> users = new ArrayList<>();
+
+    public List<User> getAllUsers() {
+        return users;
+
+    }
 }
